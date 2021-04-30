@@ -1,0 +1,11 @@
+.skills {
+  @apply m-4;
+}
+
+.title-skills {
+  @apply mb-1 text-lg font-semibold text-gray-300 normal-case;
+}
+
+.cards {
+  @apply grid grid-cols-1 gap-4 lg:grid-cols-2;
+}

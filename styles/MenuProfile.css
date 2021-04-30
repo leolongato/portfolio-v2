@@ -1,0 +1,15 @@
+.menuprofile {
+  @apply flex items-center justify-center rounded md:col-span-1;
+}
+
+.header-profile-data {
+  @apply flex items-center justify-center p-1 rounded-full cursor-pointer hover:bg-gray-900;
+}
+
+.header-profile-pic {
+  @apply w-8 h-8 rounded-full;
+}
+
+.name-header {
+  @apply font-semibold tracking-wider normal-case;
+}

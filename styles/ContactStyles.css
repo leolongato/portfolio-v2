@@ -1,0 +1,39 @@
+.contact {
+  @apply flex flex-col justify-center w-auto h-auto m-4 text-gray-300 cursor-pointer;
+}
+
+.contact-content {
+  @apply flex items-center justify-start mr-auto;
+}
+
+.clipboard-content {
+  @apply flex items-center justify-center w-full px-2 py-1 mr-2 bg-gray-800 border border-gray-800 rounded-md md:mr-0;
+}
+
+.clip-switch {
+  @apply flex items-center w-full mt-1 justify-evenly md:flex-col md:items-start;
+}
+
+.gmail_icon {
+  @apply w-6 h-6;
+}
+
+.title {
+  @apply flex items-center text-lg font-semibold normal-case;
+}
+
+.div-title {
+  @apply w-auto bg-white;
+}
+
+.email-address {
+  @apply ml-4 text-sm text-gray-400 lowercase break-all md:text-base md:mr-4;
+}
+
+.switch-div {
+  @apply md:flex md:items-center md:w-full md:mt-4;
+}
+
+.title-theme {
+  @apply items-center hidden text-lg font-semibold normal-case md:flex;
+}

@@ -1,0 +1,45 @@
+.card {
+  @apply flex flex-col justify-between p-5 bg-gray-800 rounded;
+}
+/* .card-popup {
+  @apply transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105;
+} */
+.top-section {
+  @apply grid grid-cols-4 gap-4 normal-case;
+}
+
+.infos {
+  @apply col-span-3;
+}
+
+.icon {
+  @apply self-start w-16 h-16 justify-self-center;
+}
+
+.title-card {
+  @apply text-lg font-semibold;
+}
+
+.description-card {
+  @apply text-sm text-gray-400;
+}
+
+.progress-div {
+  @apply grid grid-cols-4 gap-4 mt-4;
+}
+
+.progress-bar {
+  @apply flex self-center col-span-3;
+}
+
+.porcentage {
+  @apply self-center text-sm text-green-400 justify-self-center;
+}
+
+.level {
+  @apply h-1 bg-green-400 rounded-l;
+}
+
+.sub-level {
+  @apply h-1 bg-gray-600 rounded-r;
+}

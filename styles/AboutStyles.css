@@ -1,0 +1,27 @@
+.main-container {
+  @apply m-4 normal-case;
+}
+
+.about-container {
+  @apply flex flex-col items-center p-4 mt-1 bg-gray-800 divide-y divide-gray-600 divide-solid justify-evenly;
+}
+
+.infos-container {
+  @apply grid grid-cols-2 gap-24;
+}
+
+.socials-container {
+  @apply w-full pt-8 mt-8;
+}
+
+.icon-tech {
+  @apply w-6 h-6 justify-self-center;
+}
+
+.techs-container {
+  @apply grid grid-cols-5 grid-rows-2;
+}
+
+.title-tech {
+  @apply col-span-4 text-gray-400 hover:text-gray-200;
+}

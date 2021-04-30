@@ -1,0 +1,7 @@
+.container-header {
+  @apply static top-0 z-10 hidden w-full h-auto mt-20 border-b border-gray-400 md:sticky md:flex md:justify-center md:items-center;
+}
+
+.header-top {
+  @apply w-full md:grid md:grid-cols-3 md:max-w-7xl;
+}

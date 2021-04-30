@@ -1,0 +1,19 @@
+body {
+  background-color: #010409;
+  color: white;
+}
+
+.container-header {
+  background-color: #010409;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    background-color: #010409;
+  }
+}
+
+svg {
+  display: initial;
+  vertical-align: auto;
+}
