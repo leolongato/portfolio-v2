@@ -3,7 +3,7 @@
 }
 
 .title-skills {
-  @apply mb-1 text-lg font-semibold text-gray-300 normal-case;
+  @apply mb-1 text-lg font-semibold text-gray-600 normal-case dark:text-gray-300 md:text-xl;
 }
 
 .cards {

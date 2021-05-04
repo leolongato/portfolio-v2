@@ -3,7 +3,7 @@
 }
 
 .header-profile-data {
-  @apply flex items-center justify-center p-1 rounded-full cursor-pointer hover:bg-gray-900;
+  @apply flex items-center justify-center p-1 text-gray-500 rounded-full cursor-pointer dark:text-gray-300 hover:bg-teal-700 hover:text-gray-50 dark:hover:bg-teal-300 dark:hover:text-gray-800;
 }
 
 .header-profile-pic {
@@ -11,5 +11,5 @@
 }
 
 .name-header {
-  @apply font-semibold tracking-wider normal-case;
+  @apply text-xl font-semibold tracking-wider normal-case;
 }

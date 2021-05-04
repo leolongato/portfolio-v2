@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-scroll";
+import Fade from "react-reveal/Fade";
 
 const Menu: React.FC = () => {
   const habRef = useRef<HTMLLIElement>();
@@ -29,23 +30,47 @@ const Menu: React.FC = () => {
   }, [btnActive]);
 
   return (
-    <ul className="menu">
-      <li ref={habRef} className="btnMenu" onClick={() => setBtnActive("h")}>
-        <Link to="skills" offset={-50} smooth={true} duration={500}>
-          <p onClick={() => setBtnActive("h")}>Habilidades</p>
+    <Fade left>
+      <ul className="menu">
+        <Link
+          to="skills"
+          offset={-55}
+          smooth={true}
+          duration={500}
+          onClick={() => setBtnActive("h")}
+        >
+          <li
+            ref={habRef}
+            className="btnMenu"
+            onClick={() => setBtnActive("h")}
+          >
+            <p>Habilidades</p>
+          </li>
         </Link>
-      </li>
-      <li ref={expRef} className="btnMenu">
-        <Link to="experiences" offset={-50} smooth={true} duration={500}>
-          <p onClick={() => setBtnActive("e")}>Experiências</p>
+        <Link
+          to="experiences"
+          offset={-55}
+          smooth={true}
+          duration={500}
+          onClick={() => setBtnActive("e")}
+        >
+          <li ref={expRef} className="btnMenu">
+            <p>Experiências</p>
+          </li>
         </Link>
-      </li>
-      <li ref={sobreRef} className="btnMenu" onClick={() => setBtnActive("s")}>
-        <Link to="about" offset={-50} smooth={true} duration={500}>
-          <p onClick={() => setBtnActive("s")}>Sobre</p>
+        <Link
+          to="about"
+          offset={-55}
+          smooth={true}
+          duration={500}
+          onClick={() => setBtnActive("s")}
+        >
+          <li ref={sobreRef} className="btnMenu">
+            <p>Sobre</p>
+          </li>
         </Link>
-      </li>
-    </ul>
+      </ul>
+    </Fade>
   );
 };
 

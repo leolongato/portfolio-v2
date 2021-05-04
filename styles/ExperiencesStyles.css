@@ -1,7 +1,7 @@
-.position {
-  @apply font-semibold text-white;
+.experiences-container {
+  @apply m-4 normal-case;
 }
 
-.location {
-  @apply text-gray-300;
+.list-skills {
+  @apply py-2;
 }

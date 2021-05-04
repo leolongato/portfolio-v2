@@ -14,22 +14,24 @@ const SkillCard: React.FC<SkillProps> = ({
   porcentage,
 }) => {
   return (
-    <div className="card">
-      <div className="top-section">
-        <img src={Icon} className="icon" />
-        <div className="infos">
-          <p className="title-card">{title}</p>
-          <p className="description-card">{description}</p>
+    <Flip left>
+      <div className="card">
+        <div className="top-section">
+          <img src={Icon} className="icon" />
+          <div className="infos">
+            <p className="title-card">{title}</p>
+            <p className="description-card">{description}</p>
+          </div>
+        </div>
+        <div className="progress-div">
+          <span className="porcentage">{`${porcentage}%`}</span>
+          <div className="progress-bar">
+            <svg width={`${porcentage}%`} className="level" />
+            <svg width={`${100 - porcentage}%`} className="sub-level" />
+          </div>
         </div>
       </div>
-      <div className="progress-div">
-        <span className="porcentage">{`${porcentage}%`}</span>
-        <div className="progress-bar">
-          <svg width={`${porcentage}%`} className="level" />
-          <svg width={`${100 - porcentage}%`} className="sub-level" />
-        </div>
-      </div>
-    </div>
+    </Flip>
   );
 };
 

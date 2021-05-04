@@ -1,13 +1,13 @@
 .header {
-  @apply flex flex-col justify-center w-auto h-auto pb-4 m-4 border-b md:justify-start md:mt-0;
+  @apply flex flex-col justify-center w-auto h-auto pb-4 m-4 border-b border-gray-600 dark:border-white md:justify-start md:mt-0;
 }
 
 .div_profile_picture {
-  @apply w-1/4 h-1/4 sm:w-1/5 sm:h-1/5 md:w-1/2 md:h-1/2;
+  @apply w-1/4 rounded-full bg-gradient-to-br from-teal-300 via-teal-400 to-blue-400 h-1/4 sm:w-1/5 sm:h-1/5 md:w-1/2 md:h-1/2;
 }
 
 .profile_picture {
-  @apply w-auto h-auto rounded-full;
+  @apply w-full h-full p-1 rounded-full;
 }
 
 .profile_data {
@@ -15,9 +15,9 @@
 }
 
 .name {
-  @apply ml-4 text-2xl font-bold text-white normal-case md:text-4xl md:ml-0;
+  @apply ml-4 text-2xl font-bold text-gray-900 normal-case dark:text-white md:text-6xl md:ml-0;
 }
 
 .description {
-  @apply w-full mt-4 text-base text-gray-200 normal-case md:text-lg;
+  @apply w-full mt-4 text-base text-gray-600 normal-case dark:text-gray-200 md:text-lg;
 }

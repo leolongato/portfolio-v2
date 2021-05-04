@@ -1,3 +1,4 @@
+import Head from "next/head";
 import ReactNotification from "react-notifications-component";
 import Header from "../components/Header";
 import Menu from "../components/Menu";
@@ -8,6 +9,7 @@ import MenuProfile from "../components/MenuProfile";
 import About from "../components/About";
 import React, { useEffect, useRef, useState } from "react";
 import { Link, Element } from "react-scroll";
+import Fade from "react-reveal/Fade";
 
 export default function Home() {
   const [showProfileButton, setShowProfileButton] = useState<boolean>(false);
@@ -17,13 +19,13 @@ export default function Home() {
     const screenWidth = window.innerWidth;
     if (screenWidth < 768) return;
     if (screenWidth >= 768 && screenWidth < 1024) {
-      if (window.pageYOffset >= 320) {
+      if (window.pageYOffset >= 380) {
         setShowProfileButton(true);
       } else {
         setShowProfileButton(false);
       }
     } else {
-      if (window.pageYOffset >= 360) {
+      if (window.pageYOffset >= 470) {
         setShowProfileButton(true);
       } else {
         setShowProfileButton(false);
@@ -41,20 +43,27 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Leonardo Longato</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="l.svg" />
+      </Head>
       <Element name="top" />
-      <div>
-        <div ref={menuContainerRef} className="container-header">
-          <div className="header-top">
-            <div className="menuprofile">
-              {showProfileButton && (
-                <Link to="top" smooth={true} duration={500}>
-                  <MenuProfile />
-                </Link>
-              )}
+      <div className="body">
+        <Fade left>
+          <div ref={menuContainerRef} className="container-header">
+            <div className="header-top">
+              <div className="menuprofile">
+                {showProfileButton && (
+                  <Link to="top" smooth={true} duration={500}>
+                    <MenuProfile />
+                  </Link>
+                )}
+              </div>
+              <Menu />
             </div>
-            <Menu />
           </div>
-        </div>
+        </Fade>
         <div className="flex flex-col items-center justify-center">
           <div className="w-full md:grid md:grid-cols-3 md:max-w-7xl">
             <ReactNotification className="normal-case" />
@@ -72,12 +81,12 @@ export default function Home() {
               <Element name="experiences" className="element">
                 <Experiences />
               </Element>
-              <Element name="about" className="element">
-                <About />
-              </Element>
             </div>
           </div>
         </div>
+        <Element name="about" className="flex items-center justify-center">
+          <About />
+        </Element>
       </div>
     </>
   );

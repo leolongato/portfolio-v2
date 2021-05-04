@@ -1,17 +1,17 @@
 .main-container {
-  @apply m-4 normal-case;
+  @apply md:max-w-7xl;
 }
 
 .about-container {
-  @apply flex flex-col items-center p-4 mt-1 bg-gray-800 divide-y divide-gray-600 divide-solid justify-evenly;
+  @apply flex flex-col items-center px-4 pt-4 mt-1 bg-gray-200 divide-y divide-gray-600 md:rounded-t dark:bg-gray-800 divide-solid justify-evenly;
 }
 
 .infos-container {
-  @apply grid grid-cols-2 gap-24;
+  @apply grid grid-cols-1 grid-rows-2 gap-5 md:gap-24 md:grid-cols-2 md:grid-rows-1;
 }
 
 .socials-container {
-  @apply w-full pt-8 mt-8;
+  @apply flex items-center justify-center w-full py-8 mt-8;
 }
 
 .icon-tech {
@@ -19,9 +19,23 @@
 }
 
 .techs-container {
-  @apply grid grid-cols-5 grid-rows-2;
+  @apply flex flex-col justify-center;
+}
+.tech-div {
+  @apply flex items-center justify-center px-2 py-1 mt-1 mr-auto text-gray-600 rounded-full cursor-pointer dark:text-gray-300 dark:hover:text-gray-800 dark:hover:bg-teal-300 hover:bg-teal-300;
+}
+.title-tech {
+  @apply col-span-4 mx-2 md:text-lg;
 }
 
-.title-tech {
-  @apply col-span-4 text-gray-400 hover:text-gray-200;
+.tech-title {
+  @apply text-teal-500 dark:text-teal-400 md:text-lg;
+}
+
+.about-description {
+  @apply text-gray-600 dark:text-gray-300 md:text-lg;
+}
+
+.rights {
+  @apply text-lg text-gray-600 dark:text-gray-300;
 }
