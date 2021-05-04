@@ -6,7 +6,7 @@ const Experiences: React.FC = () => {
       <h1 className="title-skills">Experiências</h1>
       <ul className="list-skills">
         <TimelineCard
-          company="Itaú Unibanco - Previdencia PJ"
+          company="Itaú Unibanco - Previdência PJ"
           period="Set/2020 - Presente"
           description="Desenvolver projetos de automações e melhorias internas, realizando
           o entendimento do escopo e propondo a melhor solução tecnológica."

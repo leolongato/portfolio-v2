@@ -9,7 +9,7 @@ const About: React.FC = () => {
           <div className="infos-container">
             <p className="about-description">
               <p className="tech-title">Porque deste site ?</p>
-              Este site foi criado com o intuito de desenvolver minhas
+              Este site foi criado com o objetivo de desenvolver minhas
               habilidades com Front-end e divulgar meu portfólio.
             </p>
             <div>
