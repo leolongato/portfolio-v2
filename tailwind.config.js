@@ -8,7 +8,7 @@ module.exports = {
       backgroundColor: ["first"],
     },
   },
-  purge: ["./src/**/*.html", "./src/**/*.js"],
+  purge: ["./**/*.css", "./**/*.tsx"],
   theme: {
     extend: {
       colors: {
